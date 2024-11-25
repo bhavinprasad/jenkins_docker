@@ -18,12 +18,9 @@ pipeline{
 
 }
 }
-	stage('Package'){
-		steps {
-			sh 'jar cf HelloWorld.jar HelloWorld.class'
 
-}
-}
+
+
 	stage('Docker Build'){
 		steps{
 			sh"""
