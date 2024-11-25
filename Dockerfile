@@ -1,6 +1,4 @@
-FROM openjdk:12-alpine
+FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY HelloWorld.java /app
-RUN javac HelloWorld.class
+COPY HelloWorld.class /app/HelloWorld.class
 CMD ["java","HelloWorld"]
-
