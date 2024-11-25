@@ -20,7 +20,7 @@ pipeline{
 }
 	stage('Package'){
 		steps {
-			sh 'jar cf HelloWorld.java HelloWorld.class'
+			sh 'jar cf HelloWorld.jar HelloWorld.class'
 
 }
 }
